@@ -88,7 +88,7 @@ export default function AnalyticsDashboard() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Job Applications Analytics</h1>
-          <p className="text-muted-foreground">Construction & Real Estate Agency - Wolverhampton, UK</p>
+          <p className="text-muted-foreground">Construction &amp; Real Estate Agency - Wolverhampton, UK</p>
         </div>
         <Button onClick={exportToCSV} className="gap-2">
           <Download className="h-4 w-4" />
@@ -155,7 +155,7 @@ export default function AnalyticsDashboard() {
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger value="applicants">Applicants</TabsTrigger>
           <TabsTrigger value="positions">Positions</TabsTrigger>
-          <TabsTrigger value="skills">Skills & Experience</TabsTrigger>
+          <TabsTrigger value="skills">Skills &amp; Experience</TabsTrigger>
         </TabsList>
 
         <TabsContent value="overview" className="space-y-4">
@@ -213,7 +213,7 @@ export default function AnalyticsDashboard() {
             <Card>
               <CardHeader>
                 <CardTitle>Current Occupations</CardTitle>
-                <CardDescription>Applicants' current roles</CardDescription>
+                <CardDescription>Applicants&apos; current roles</CardDescription>
               </CardHeader>
               <CardContent className="h-[300px]">
                 <OccupationsChart data={applications} />
