@@ -1,3 +1,5 @@
+import { ApplicationData } from "./types"
+
 // Helper function to generate a random date between Feb 2025 and Jan 2024
 const generateRandomDate = (): string => {
     const end = new Date("2025-02-28")
@@ -196,7 +198,7 @@ const generateRandomDate = (): string => {
       }
       
       const skills = generateSkillsForPosition(positionAppliedFor)
-      const workArrangement = getRandomItem(workArrangements)
+      const workArrangement = getRandomItem([...workArrangements])
       const applicationDate = generateRandomDate()
       const cvFileName = generateCVFilename(fullName, positionAppliedFor)
       
