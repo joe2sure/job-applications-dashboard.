@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import AnalyticsDashboard from "@/components/analytics-dashboard"
 
 export const metadata: Metadata = {
-  title: "Job Applications Analytics Dashboard",
+  title: "Peeman Job Applications Analytics Dashboard",
   description: "Construction & Real Estate Agency Job Applications Analytics",
 }
 
